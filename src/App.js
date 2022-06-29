@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
+import logo from "./images/logo.svg";
 import "./App.css";
-import Header from "./Header";
-import MainContent from "./MainContent";
-import Footer from "./Footer";
-import NavBar from "./NavBar";
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
