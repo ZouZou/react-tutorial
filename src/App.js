@@ -18,7 +18,7 @@ function App() {
       <Footer /> */}
       <NavBar />
       <Hero />
-      <Card />
+      <Card rating="5.0" reviewCount="6" country="USA" title="Life lessons with Katie Zaferes" price="136" />
     </div>
   );
 }
