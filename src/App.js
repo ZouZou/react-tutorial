@@ -8,8 +8,12 @@ import "./components/AirBnb_Experiences/style.css";
 import NavBar from "./components/AirBnb_Experiences/Navbar";
 import Hero from "./components/AirBnb_Experiences/Hero";
 import Card from "./components/AirBnb_Experiences/Card";
+import data from "./data";
 
 function App() {
+  const cards = data.map((item) => {
+    return <Card key={item.id} {...item} />;
+  });
   return (
     <div>
       {/* <NavBar />
@@ -18,7 +22,14 @@ function App() {
       <Footer /> */}
       <NavBar />
       <Hero />
-      <Card rating="5.0" reviewCount={6} country="USA" title="Life lessons with Katie Zaferes" price={136} />
+      <section className="cards-list">{cards}</section>
+      {/* <Card
+        rating="5.0"
+        reviewCount={6}
+        country="USA"
+        title="Life lessons with Katie Zaferes"
+        price={136}
+      /> */}
     </div>
   );
 }
